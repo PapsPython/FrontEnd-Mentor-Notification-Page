@@ -1,0 +1,153 @@
+:root{
+  --primary-red-color:hsl(1, 90%, 64%);
+  --primary-blue-color:hsl(219, 85%, 26%);
+  --neutral-white-color:hsl(0, 0%, 100%);
+  --neutral-light-grayish-blue :hsl(210, 60%, 98%);
+  --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-grayish-blue:hsl(219, 14%, 63%);
+  --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-very-dark-grayish-blue:hsl(224, 21%, 14%);  
+  --font-size:16px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+.container{
+  padding:0.7em 1.2em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+header,
+.notificationsummary{
+  display: flex;
+  align-items: baseline;
+ }
+
+header{
+  justify-content: space-between;
+}
+
+.notificationsummary{
+gap:0.6em;
+}
+
+.numbercontainer{
+ display: flex;
+ width: 22px;
+ height:20px;
+ background-color:var(--primary-blue-color);
+ border-radius: 3px;
+}
+
+.numbercontainer p{
+  color: var(--neutral-white-color);
+  margin:auto;
+}
+
+#notifications p{
+  padding:0.3em 1.5em;
+  align-self: center;
+ }
+
+.unreadmsg{
+  background-color: var(--neutral-light-grayish-blue);
+  border-radius:6px;
+  margin-bottom: 0.8em;
+ }
+
+
+
+.namestyling{
+  font-weight:800;
+  color: var(--neutral-very-dark-grayish-blue);
+}
+
+.actionstyling{
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 500;
+}
+
+.timestampstyling{
+  font-weight: 500;
+  color: var(--neutral-light-grayish-blue-2);
+ }
+
+i{
+  display: block;
+  transform: translateY(-2px);
+  }
+
+.dontshow{
+  visibility: hidden;
+}
+
+span{
+  padding-right: 0.4em;
+}
+
+.hiddenreply{
+  display: none;
+}
+
+.replystyling{
+  margin: 0 3em;
+  border: 1px solid var(--neutral-dark-grayish-blue);
+  border-radius: 5px;
+  color:var(--neutral-grayish-blue);
+  }
+
+.msglayout{
+  display: flex;
+  align-items:center;
+ }
+
+img{
+  width:40px;
+  align-self:center;
+  margin-left:1em;
+  }
+
+.blue{
+  color:var(--primary-blue-color);
+  font-weight:800;
+}
+
+@media and (min-width:375px){
+  html,body{
+    background-color:linear-gradient(to left, var(--neutral-light-grayish-blue-1),var(--neutral-light-grayish-blue-2)) ;
+  }
+.container{
+  border-radius: 10px; 
+  background-color:white;
+  box-shadow:0px 0px 10px var(--neutral-grayish-blue);
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
